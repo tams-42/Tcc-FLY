@@ -1,0 +1,71 @@
+.banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.titulo-banner {
+    font-size: 90px;
+    color: var(--cor-escura);
+    width: 400px;
+    margin: 60px 80px;
+}
+
+.imagem-banner {
+    width: 1000px;
+    height: 400px;
+    margin: 60px 100px 50px 0;
+}
+
+.banner-conheca {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.texto-conheca {
+    background-color: var(--salmao);
+    border-radius: 20px;
+    width: 80vw;
+    display: grid;
+    align-items: end;
+    position: relative;
+    right: 5%;
+}
+
+.conheca-loja {
+    position: relative;
+    left: 15%;
+    font-size: 100px;
+    color: var(--branca);
+    width: 600px;
+    text-align: right;
+    margin: 50px 30px 40px 200px;
+}
+
+.botao-conheca {
+    text-align: center;
+    position: relative;
+    left: 75%;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--cor-escura);
+    width: 170px;
+    padding: 5px 0;
+    border: 1px solid var(--branca);
+    border-radius: 15px;
+    margin: 0 50px 50px 0;
+}
+
+.botao-conheca:hover {
+    background-color: var(--rosa-claro);
+}
+
+.imagem-conheca {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    left: 200;
+    z-index: 20;
+}
