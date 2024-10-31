@@ -1,0 +1,131 @@
+.pagamento-form {
+    display: grid;
+    margin-top: 30px;
+    margin-left: 70px;
+    padding: 10px 20px;
+    align-items: center;
+    width: 80vw;
+    border-radius: 50px;
+}
+
+.nome {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--cor-escura);
+}
+
+.nome-form {
+    display: flex;
+    padding: 10px 0;
+    margin-bottom: 20px; 
+}
+
+.nome-pagamento {
+    position: absolute;
+    right: 300px;
+    width: 610px;
+}
+
+.endereco-pagamento {
+    position: absolute;
+    right: 300px;
+    width: 500px;
+}
+
+.endereco {
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--cor-escura);
+}
+
+input[type="name"] {
+    border: 1px solid var(--cor-escura);
+    border-radius: 20px;
+    height: 30px;
+    padding: 0 1em;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--cor-escura);
+    background-color: transparent;
+}
+
+.pagamento-form:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-color: var(--salmao);
+
+}
+
+.forma {
+    border-top: 2px solid var(--cor-escura);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 5px;
+    padding: 20px 0;
+    color: var(--cor-escura);
+}
+
+.forma-pagamento {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--cor-escura);
+    padding: 20px 0;
+}
+
+.pagamento {
+    border: 1px solid var(--cor-escura);
+    border-radius: 15px;
+    width: 200px;
+    height: 45px;
+    padding: 5px 0;
+    text-align: center;
+    background-color: transparent;
+    font-family: var(--fonte-principal);
+    color: var(--cor-escura);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.pagamento-section {
+    border: 2px solid var(--cor-escura);
+    border-radius: 30px;
+    padding: 20px 10px 30px 10px;
+    margin: 50px 150px;
+}
+
+.pagamento:focus, select:focus {
+    background-color: var(--salmao);
+}
+
+.fechar {
+    width: 450px;
+    border: 1px solid var(--cor-escura);
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    font-weight: 300;
+    padding: 5px 5px;
+    color: var(--cor-escura);
+    background-color: transparent;
+    border: 1px solid var(--cor-escura);
+    border-radius: 25px;
+}
+
+.inferno {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+}
+
+.fechar:focus, select:focus {
+    background-color: var(--salmao);
+}
+
+.fechar:hover {
+    background-color: var(--salmao);
+}

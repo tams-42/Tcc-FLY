@@ -1,0 +1,122 @@
+.titulo__main {
+    font-size: 55px;
+    text-align: center;
+    padding: 0.2em 0;
+    margin: 40px 24vw 10px 24vw;
+    background-color: var(--salmao);
+    color: var(--cor-escura);
+    border-radius: 30px;
+}
+
+.main {
+    padding: 3vw 18vw;
+}
+
+.swiper-slide, .imagin{
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.imagin {
+    width: 70%;
+    margin-left: 35px;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-pagination{
+    display: none;
+} 
+
+.swiper-scrollbar {
+    display: none;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: var(--cor-escura);
+    width: 22px;
+    height: 22px;
+    padding: 1em;
+}
+
+.swiper-button-next {
+    right: -15px; /* Ajuste a distância desejada */
+  }
+  
+  .swiper-button-prev {
+    left: -15px; /* Ajuste a distância desejada */
+  }
+
+.swiper-slide {
+    display: grid;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-escura);
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.quantidade-produto {
+    padding: 7px 22px;
+    margin-left: 22px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px solid var(--cor-escura);
+    border-radius: 27px;
+    text-align: center;
+}
+
+.texto-produto {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.valor {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.texto-valor {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.preco-valor {
+    padding: 7px 25px;
+    margin-left: 26px;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px solid var(--cor-escura);
+    border-radius: 27px;
+    text-align: center;
+}
+
+.doce {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.excluir {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    border: 1px solid var(--cor-escura);
+    border-radius: 27px;
+    padding: 7px 15px;
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 150px;
+}

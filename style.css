@@ -1,0 +1,19 @@
+@import url(styles/header.css);
+@import url(styles/main.css);
+@import url(styles/pagamento.css);
+@import url(styles/rodape.css);
+
+:root {
+    --branca: #ffffff;
+    --rosa-claro: #fbd7c9;
+    --salmao: #fe8f74;
+    --salmao-escuro: #e3856f;
+    --cor-escura: #7b363e;
+    --fonte-titulo: "Barlow Condensed"; 
+}
+
+body {
+    background-color: var(--rosa-claro);
+    font-weight: 600;
+    font-family: var(--fonte-titulo);
+}
