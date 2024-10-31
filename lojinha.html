@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;600&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__inicio">
+            <img src="/img/Logo_1.png" class="cabecalho__imagem">
+        </div>
+        <ul class="lista__menu">
+            <li class="lista__menu-links">
+                <a href="index.html" class="lista__menu-links">Inicio</a>
+            </li>
+            <li class="lista__menu-links">
+                <a href="#" class="lista__menu-links">Sobre Nós</a>
+            </li>
+            <li class="lista__menu-links">
+                <a href="lojinha.html" class="lista__menu-links">Lojinha</a>
+            </li>
+        </ul>
+    </header>
+    <h1 class="titulo">Lojinha</h1>
+    <h2 class="titulo__main">Produtos</h2>
+    <section class="main">
+
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="img/Produtos_1.png" class="imagin">
+            <h2 class="doce">Pudim</h2>
+            <div class="texto">
+                <h2 class="texto-produto">Quantidade: </h2>
+                <h3 class="quantidade-produto">0</h3>
+            </div>
+            <div class="valor">
+                <h2 class="texto-valor">Total: </h2>
+                <h2 class="preco-valor">R$ 6,00</h2>
+            </div>
+            <h2 class="excluir">Excluir</h2>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="img/Produtos_2.png" class="imagin">
+            <h2 class="doce">Brigadeiro</h2>
+            <div class="texto">
+                <h2 class="texto-produto">Quantidade: </h2>
+                <h3 class="quantidade-produto">0</h3>
+            </div>
+            <div class="valor">
+                <h2 class="texto-valor">Total: </h2>
+                <h2 class="preco-valor">R$ 6,00</h2>
+            </div>
+            <h2 class="excluir">Excluir</h2>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="img/Produtos_3.png" class="imagin">
+            <h2 class="doce">Beijinho</h2>
+            <div class="texto">
+                <h2 class="texto-produto">Quantidade: </h2>
+                <h3 class="quantidade-produto">0</h3>
+            </div>
+            <div class="valor">
+                <h2 class="texto-valor">Total: </h2>
+                <h2 class="preco-valor">R$ 6,00</h2>
+            </div>
+            <h2 class="excluir">Excluir</h2>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="img/Produtos_4.png" class="imagin">
+            <h2 class="doce">Brownie</h2>
+            <div class="texto">
+                <h2 class="texto-produto">Quantidade: </h2>
+                <h3 class="quantidade-produto">0</h3>
+            </div>
+            <div class="valor">
+                <h2 class="texto-valor">Total: </h2>
+                <h2 class="preco-valor">R$ 6,00</h2>
+            </div>
+            <h2 class="excluir">Excluir</h2>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="img/Produtos_5.png" class="imagin">
+            <h2 class="doce">Torta de Limão</h2>
+            <div class="texto">
+                <h2 class="texto-produto">Quantidade: </h2>
+                <h3 class="quantidade-produto">0</h3>
+            </div>
+            <div class="valor">
+                <h2 class="texto-valor">Total: </h2>
+                <h2 class="preco-valor">R$ 6,00</h2>
+            </div>
+            <h2 class="excluir">Excluir</h2>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="img/Produtos_6.png" class="imagin">
+            <h2 class="doce">Cheesecake</h2>
+            <div class="texto">
+                <h2 class="texto-produto">Quantidade: </h2>
+                <h3 class="quantidade-produto">0</h3>
+            </div>
+            <div class="valor">
+                <h2 class="texto-valor">Total: </h2>
+                <h2 class="preco-valor">R$ 6,00</h2>
+            </div>
+            <h2 class="excluir">Excluir</h2>
+        </div>
+        ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    </section>
+
+    <h2 class="titulo__main">Pagamento</h2>
+    <section class="pagamento-section">
+        <div class="pagamento-form">
+            <div class="nome-form">
+                <label for="nome" class="nome">Nome: </label>
+                <input type="name" id="nome" class="nome-pagamento"/>
+            </div>
+            <div class="nome-form">
+                <label for="endereco" class="endereco">Endereço de entrega: </label>
+                <input type="name" id="endereco" class="endereco-pagamento"/>
+            </div>
+        </div>
+            <h2 class="forma">Forma de Pagamento</h2>
+            <div class="forma-pagamento">    
+                <button class="pagamento">Crédito</button>
+                <button class="pagamento">Pix</button>
+                <button class="pagamento">Débito</button>
+            </div>
+        </section>
+    <a href="#" class="inferno">
+    <button class="fechar">Fechar pedido</button>
+    </a>
+
+    <section class="rodape">
+        <div class="texto-rodape">
+            <img src="img/Logo_1.png" class="img-rodape">
+            <h3 class="escrito-rodape">
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim</h3>
+        </div>
+        <div class="conheca">
+            <div class="links">
+            <h2 class="conheca-rodape">Conheça nossas redes</h2>
+                <div class="botoes">
+                <a href="#" class="conheca-links">Instagram</a>
+                <a href="#" class="conheca-links">Twitter</a>
+                </div>
+            </div>
+            <div class="texto-links">
+                <h2 class="texto-links-tx">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim</h2>
+            </div>    
+        </div>
+       
+    </section>
+
+    <section class="rodape-final">
+        <div class="direitos">
+            <h2 class="teste">2024 todos os direitos reservados</h2>
+        </div>
+        <div class="termos">
+            <h2>Termos de uso</h2>
+            <h2>Política de Privacidade</h2>
+        </div>  
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 15,
+            slidesPerView: 3,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+
+</body>
+</html>
