@@ -1,0 +1,52 @@
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 0;    
+}
+
+.sobre-titulo {
+    font-size: 100px;
+    color: var(--cor-escura);
+    padding-left: 7%;
+    font-weight: 400;
+    width: 50vw;
+}
+
+.sobre-texto {
+    width: 50vw;
+    margin: 0 10% 0 0;
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--cor-escura);
+}
+
+.maria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7% 7% 4% 7%;
+}
+
+.maria__imagem {
+    width: 40%;
+}
+
+.maria__descricao {
+    display: grid;
+    width: 50%;
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--cor-escura);
+}
+
+.maria__nome {
+    padding-bottom: 3%;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.maria__paragrafo {
+    text-align: justify;
+}
+
