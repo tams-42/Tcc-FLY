@@ -2,6 +2,8 @@
 @import url(styles/main.css);
 @import url(styles/pagamento.css);
 @import url(styles/rodape.css);
+@import url(styles/banner.css);
+@import url(styles/sobre-nos.css);
 
 :root {
     --branca: #ffffff;
@@ -16,4 +18,5 @@ body {
     background-color: var(--rosa-claro);
     font-weight: 600;
     font-family: var(--fonte-titulo);
+    
 }
