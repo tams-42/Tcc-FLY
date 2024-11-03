@@ -1,32 +1,33 @@
 .titulo__main {
-    font-size: 55px;
+    font-size: 6vw; /* Usa unidades relativas para responsividade */
     text-align: center;
     padding: 0.2em 0;
-    margin: 40px 24vw 10px 24vw;
+    margin: 20px 5vw 10px 5vw; /* Ajusta margens para telas menores */
     background-color: var(--salmao);
     color: var(--cor-escura);
     border-radius: 30px;
 }
 
 .main {
-    padding: 3vw 18vw;
+    padding: 5vw 10vw; /* Ajusta o padding para ser mais flexível em telas menores */
 }
 
-.swiper-slide, .imagin{
+.swiper-slide, .imagin {
     width: 100%;
     padding: 0.5em 0;
 }
 
 .imagin {
-    width: 70%;
-    margin-left: 35px;
+    width: 80%; /* Ajusta a largura para telas menores */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza a imagem em dispositivos menores */
 }
 
 .swiper {
     width: 100%;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     display: none;
 } 
 
@@ -36,18 +37,18 @@
 
 .swiper-button-prev, .swiper-button-next {
     color: var(--cor-escura);
-    width: 22px;
-    height: 22px;
+    width: 18px; /* Ajusta o tamanho dos botões para telas menores */
+    height: 18px;
     padding: 1em;
 }
 
 .swiper-button-next {
-    right: -15px; /* Ajuste a distância desejada */
-  }
-  
-  .swiper-button-prev {
-    left: -15px; /* Ajuste a distância desejada */
-  }
+    right: -15px;
+}
+
+.swiper-button-prev {
+    left: -15px;
+}
 
 .swiper-slide {
     display: grid;
@@ -59,22 +60,23 @@
     display: flex;
     align-items: center;
     font-weight: 300;
+    font-size: 3.5vw; /* Ajusta o tamanho da fonte para telas menores */
 }
 
 .quantidade-produto {
-    padding: 7px 22px;
-    margin-left: 22px;
+    padding: 5px 15px;
+    margin-left: 5vw;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     border: 1px solid var(--cor-escura);
     border-radius: 27px;
     text-align: center;
 }
 
 .texto-produto {
-    font-size: 25px;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     text-align: left;
-    margin-left: 35px;
+    margin-left: 5vw;
     margin-top: 10px;
 }
 
@@ -86,37 +88,67 @@
 }
 
 .texto-valor {
-    font-size: 25px;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     text-align: left;
-    margin-left: 35px;
+    margin-left: 5vw;
     margin-top: 10px;
 }
 
 .preco-valor {
-    padding: 7px 25px;
-    margin-left: 26px;
+    padding: 5px 15px;
+    margin-left: 5vw;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     border: 1px solid var(--cor-escura);
     border-radius: 27px;
     text-align: center;
 }
 
 .doce {
-    font-size: 25px;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     text-align: left;
-    margin-left: 35px;
+    margin-left: 5vw;
     margin-top: 10px;
 }
 
 .excluir {
     text-align: center;
-    font-size: 25px;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     font-weight: 300;
     border: 1px solid var(--cor-escura);
     border-radius: 27px;
-    padding: 7px 15px;
+    padding: 5px 10px;
     margin-top: 10px;
-    margin-left: 35px;
-    width: 150px;
+    margin-left: 5vw;
+    width: 120px; /* Ajusta a largura para telas menores */
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 768px) {
+    .titulo__main {
+        font-size: 55px;
+        margin: 40px 24vw 10px 24vw;
+    }
+
+    .main {
+        padding: 3vw 18vw;
+    }
+
+    .imagin {
+        width: 70%;
+        margin-left: 35px;
+    }
+
+    .texto {
+        font-size: 25px;
+    }
+
+    .quantidade-produto, .texto-produto, .texto-valor, .preco-valor, .doce, .excluir {
+        font-size: 25px;
+        margin-left: 22px;
+    }
+
+    .excluir {
+        width: 150px;
+    }
 }
