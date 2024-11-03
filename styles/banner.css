@@ -1,71 +1,124 @@
 .banner {
     display: flex;
+    flex-direction: column; /* Alinha verticalmente em telas pequenas */
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px; /* Reduz a margem inferior em telas menores */
 }
 
 .titulo-banner {
-    font-size: 90px;
+    font-size: 10vw; /* Usa unidades relativas para responsividade */
     color: var(--cor-escura);
-    width: 400px;
-    margin: 60px 80px;
+    width: 80vw; /* Ajusta a largura em telas menores */
+    margin: 30px 0; /* Reduz a margem para telas menores */
+    text-align: center; /* Centraliza o texto em dispositivos menores */
 }
 
 .imagem-banner {
-    width: 1000px;
-    height: 400px;
-    margin: 60px 100px 50px 0;
+    width: 90vw; /* Largura proporcional para dispositivos menores */
+    height: auto; /* Ajusta a altura automaticamente */
+    margin: 20px 0; /* Margem reduzida para dispositivos menores */
 }
 
 .banner-conheca {
     display: flex;
+    flex-direction: column; /* Alinha verticalmente em telas pequenas */
     align-items: center;
-    margin-left: 200px;
+    margin-left: 0; /* Remove a margem em dispositivos menores */
 }
 
 .texto-conheca {
     background-color: var(--salmao);
     border-radius: 20px;
-    width: 80vw;
+    width: 90vw; /* Ajusta a largura para telas menores */
     display: grid;
     align-items: end;
-    position: relative;
-    right: 5%;
+    margin: 20px 0; /* Margem para dispositivos menores */
+    right: 0; /* Remove o deslocamento lateral */
 }
 
 .conheca-loja {
-    position: relative;
-    left: 15%;
-    font-size: 100px;
+    font-size: 8vw; /* Usa unidades relativas para responsividade */
     color: var(--branca);
-    width: 600px;
-    text-align: right;
-    margin: 50px 30px 40px 200px;
+    width: 80vw; /* Ajusta a largura para dispositivos menores */
+    text-align: center; /* Centraliza o texto para dispositivos menores */
+    margin: 20px 0; /* Reduz a margem para dispositivos menores */
+    position: relative;
+    left: 0; /* Remove o deslocamento lateral */
 }
 
 .botao-conheca {
-    text-align: center;
-    position: relative;
-    left: 75%;
-    font-size: 25px;
+    font-size: 5vw; /* Usa unidades relativas para responsividade */
     font-weight: 300;
     text-decoration: none;
     color: var(--cor-escura);
-    width: 170px;
+    width: 40vw; /* Ajusta a largura para dispositivos menores */
     padding: 5px 0;
     border: 1px solid var(--branca);
     border-radius: 15px;
-    margin: 0 50px 50px 0;
-}
-
-.botao-conheca:hover {
-    background-color: var(--rosa-claro);
+    margin: 10px 0 30px 0; /* Reduz as margens para telas menores */
+    left: 0; /* Remove o deslocamento lateral */
+    position: relative;
 }
 
 .imagem-conheca {
-    position: absolute;
-    width: 300px;
-    height: 450px;
-    left: 200;
+    width: 200px; /* Ajusta o tamanho da imagem em dispositivos menores */
+    height: auto;
+    position: relative;
+    margin-top: 20px; /* Adiciona margem para espaçamento */
+    left: 0; /* Remove o deslocamento lateral */
     z-index: 20;
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 768px) {
+    .banner {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+
+    .titulo-banner {
+        font-size: 90px; /* Tamanho original para telas maiores */
+        width: 400px;
+        margin: 60px 80px;
+        text-align: left;
+    }
+
+    .imagem-banner {
+        width: 1000px;
+        height: 400px;
+        margin: 60px 100px 50px 0;
+    }
+
+    .banner-conheca {
+        flex-direction: row;
+        margin-left: 200px;
+    }
+
+    .texto-conheca {
+        width: 80vw;
+        right: 5%;
+    }
+
+    .conheca-loja {
+        font-size: 100px;
+        width: 600px;
+        text-align: right;
+        margin: 50px 30px 40px 200px;
+        left: 15%;
+    }
+
+    .botao-conheca {
+        font-size: 25px;
+        width: 170px;
+        margin: 0 50px 50px 0;
+        left: 75%;
+    }
+
+    .imagem-conheca {
+        width: 300px;
+        height: 450px;
+        position: absolute;
+        left: 200px;
+    }
 }
