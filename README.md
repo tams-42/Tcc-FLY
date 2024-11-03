@@ -1,12 +1,10 @@
 <h1 aligm ="center"> PROJETO WEB DOCERIA FLY</h1>
 
---------------------------------------------------
-
 ## Descrição
 * Projeto de TCC do curso FLY - Mulheres In Tech com a proposta de desenvolver uma página web. 
 Esta chamada "Doceria Fly" que tem o propósito de oferecer produtos acessíveis para pessoas com doenças celíacas. 
 
-### Dependências
+## Dependências
 
 * Navegador Web;
 *  VScode;
@@ -14,7 +12,7 @@ Esta chamada "Doceria Fly" que tem o propósito de oferecer produtos acessíveis
 *  CSS 3;
 *  Javascript.
 
-### Executando o Programa
+## Executando o Programa
 
 * Baixe o repositório e execute com o seu VScode o LiveServer em localhost. 
 
@@ -26,5 +24,5 @@ Esta chamada "Doceria Fly" que tem o propósito de oferecer produtos acessíveis
 * Kayane Barbosa;
 * Maria Eduarda Miranda;
 * Tâmara Falcão.
-
---------------------------------------------------
+  
+##
