@@ -1,23 +1,26 @@
 /* Ajuste para garantir que o conteúdo ocupe a tela toda */
 body, html {
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
+    width: 100%;
 }
 
 /* Configuração do rodapé principal */
 .rodape {
     display: flex;
-    width: 80vw;
-    margin-left: 150px;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 30px;
 }
 
 /* Ajustes na estrutura dos elementos internos */
 .texto-rodape {
     display: grid;
-    width: 400px;
-    margin: 40px 40px 30px 48px;
+    width: 50%;
+    margin: 40px 20px 30px 10px;
+    padding: 0 50px 20px 40px;
     border-right: 1px solid var(--cor-escura);
 }
 
@@ -30,12 +33,13 @@ body, html {
     font-weight: 300;
     margin-top: 30px;
     margin-right: 50px;
+    width: 100%;
     color: var(--cor-escura);
 }
 
 .conheca {
     display: grid;
-    margin: 40px 20px 30px 48px;
+    margin: 40px 20px 30px 20px;
 }
 
 .links {
@@ -91,18 +95,18 @@ body, html {
     background-color: var(--cor-escura);
     font-weight: 300;
     font-size: 20px;
-    height: 3cm; /* Define altura fixa de 3 centímetros */
+    height: 1.5cm; /* Define altura fixa de 3 centímetros */
     width: 100%;
     position: relative; /* Fica no final do conteúdo */
     bottom: 0;
-    padding: 0 20px; /* Opcional: adiciona um pouco de espaço nas laterais */
+    padding: 0 10px 0 10px; /* Opcional: adiciona um pouco de espaço nas laterais */
 }
 
 .termos {
     display: flex;
     justify-content: space-between;
     width: 350px;
-    margin: 0 auto; /* Centralizado na tela */
+    margin: 0; /* Centralizado na tela */
 }
 
 .direitos {
