@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: column; /* Coluna por padrão para dispositivos menores */
     align-items: center;
-    justify-content: center;
-    padding: 5% 0;    
+    justify-content: left; 
 }
 
 /* Estilo do título da seção "sobre" */
@@ -14,17 +13,6 @@
     padding-left: 5%;
     font-weight: 400;
     width: 90%; /* Largura ajustável para telas menores */
-    text-align: center; /* Centraliza o texto em dispositivos menores */
-    margin-bottom: 2%; /* Adiciona margem inferior */
-}
-
-/* Estilo do texto da seção "sobre" */
-.sobre-texto {
-    width: 90%;
-    margin: 0 5%;
-    font-size: 5vw; /* Unidade relativa para adaptar o tamanho do texto */
-    font-weight: 300;
-    color: var(--cor-escura);
     text-align: center; /* Centraliza o texto em dispositivos menores */
 }
 
@@ -74,8 +62,7 @@
     .sobre {
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
-        padding: 5% 0;
+        padding: 7% 0;
     }
 
     .sobre-titulo {
@@ -96,7 +83,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 7% 7% 4% 7%;
+        padding: 2% 7% 4% 7%;
     }
 
     .maria__imagem {
@@ -119,3 +106,4 @@
         font-size: 30px; /* Tamanho fixo para telas maiores */
     }
 }
+
