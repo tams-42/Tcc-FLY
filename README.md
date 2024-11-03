@@ -25,4 +25,7 @@ Esta chamada "Doceria Fly" que tem o propósito de oferecer produtos acessíveis
 * Maria Eduarda Miranda;
 * Tâmara Falcão.
   
-##
+## Imagens do projeto
+
+![Home Page](home.png)
+
