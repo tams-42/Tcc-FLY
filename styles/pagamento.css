@@ -38,7 +38,7 @@
 }
 
 .nome-pagamento, .endereco-pagamento {
-    width: 90%; /* Ajusta a largura para telas menores */
+    width: 70%; /* Ajusta a largura para telas menores */
     position: relative; /* Remove posição absoluta para flexibilidade */
 }
 
