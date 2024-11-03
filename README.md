@@ -1,4 +1,4 @@
-<h1 aligm ="center"><# PROJETO WEB DOCERIA FLY></h1>
+<h1 aligm ="center"> PROJETO WEB DOCERIA FLY</h1>
 
 ## Descrição
 * Projeto de TCC do curso FLY - Mulheres In Tech com a proposta de desenvolver uma página web. 
