@@ -1,39 +1,32 @@
 .pagamento-form {
     display: grid;
-    margin-top: 30px;
-    margin-left: 70px;
+    margin: 20px 5vw;
     padding: 10px 20px;
     align-items: center;
-    width: 80vw;
+    width: 90vw;
     border-radius: 50px;
 }
 
 .nome {
-    font-size: 30px;
+    font-size: 5vw; /* Ajusta a fonte para responsividade */
     font-weight: 400;
     color: var(--cor-escura);
 }
 
 .nome-form {
     display: flex;
+    flex-direction: column; /* Empilha os elementos em telas menores */
     padding: 10px 0;
     margin-bottom: 20px; 
 }
 
-.nome-pagamento {
-    position: absolute;
-    right: 300px;
-    width: 610px;
-}
-
-.endereco-pagamento {
-    position: absolute;
-    right: 300px;
-    width: 500px;
+.nome-pagamento, .endereco-pagamento {
+    width: 90%; /* Ajusta a largura para telas menores */
+    position: relative; /* Remove posição absoluta para flexibilidade */
 }
 
 .endereco {
-    font-size: 25px;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     font-weight: 300;
     color: var(--cor-escura);
 }
@@ -45,23 +38,16 @@ input[type="name"] {
     padding: 0 1em;
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 3vw; /* Ajusta a fonte para responsividade */
     color: var(--cor-escura);
     background-color: transparent;
-}
-
-.pagamento-form:focus, input:focus, select:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    background-color: var(--salmao);
-
 }
 
 .forma {
     border-top: 2px solid var(--cor-escura);
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 5vw; /* Ajusta a fonte para responsividade */
     font-weight: 400;
     margin-top: 5px;
     padding: 20px 0;
@@ -70,8 +56,9 @@ input[type="name"] {
 
 .forma-pagamento {
     display: flex;
-    justify-content: space-around;
-    font-size: 25px;
+    flex-direction: column; /* Empilha os elementos em telas menores */
+    align-items: center;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     font-weight: 300;
     color: var(--cor-escura);
     padding: 20px 0;
@@ -80,14 +67,14 @@ input[type="name"] {
 .pagamento {
     border: 1px solid var(--cor-escura);
     border-radius: 15px;
-    width: 200px;
+    width: 50vw; /* Ajusta a largura para telas menores */
     height: 45px;
     padding: 5px 0;
     text-align: center;
     background-color: transparent;
     font-family: var(--fonte-principal);
     color: var(--cor-escura);
-    font-size: 30px;
+    font-size: 4vw; /* Ajusta a fonte para responsividade */
     font-weight: 300;
 }
 
@@ -95,37 +82,66 @@ input[type="name"] {
     border: 2px solid var(--cor-escura);
     border-radius: 30px;
     padding: 20px 10px 30px 10px;
-    margin: 50px 150px;
-}
-
-.pagamento:focus, select:focus {
-    background-color: var(--salmao);
+    margin: 30px 5vw; /* Ajusta margens para telas menores */
 }
 
 .fechar {
-    width: 450px;
+    width: 60vw; /* Ajusta a largura para telas menores */
     border: 1px solid var(--cor-escura);
     font-family: var(--fonte-principal);
-    font-size: 40px;
+    font-size: 5vw; /* Ajusta a fonte para responsividade */
     font-weight: 300;
     padding: 5px 5px;
     color: var(--cor-escura);
     background-color: transparent;
-    border: 1px solid var(--cor-escura);
     border-radius: 25px;
 }
 
 .inferno {
     display: flex;
-    text-decoration: none;
     justify-content: center;
     margin: 50px 0 30px 0;
 }
 
-.fechar:focus, select:focus {
-    background-color: var(--salmao);
-}
+/* Media Queries para telas maiores */
+@media (min-width: 768px) {
+    .pagamento-form {
+        margin: 30px 70px;
+        width: 80vw;
+    }
 
-.fechar:hover {
-    background-color: var(--salmao);
+    .nome {
+        font-size: 30px;
+    }
+
+    .endereco {
+        font-size: 25px;
+    }
+
+    .input[type="name"] {
+        font-size: 15px;
+    }
+
+    .forma {
+        font-size: 40px;
+    }
+
+    .forma-pagamento {
+        flex-direction: row;
+        font-size: 25px;
+    }
+
+    .pagamento {
+        width: 200px;
+        font-size: 30px;
+    }
+
+    .pagamento-section {
+        margin: 50px 150px;
+    }
+
+    .fechar {
+        width: 450px;
+        font-size: 40px;
+    }
 }
