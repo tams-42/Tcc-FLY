@@ -28,4 +28,8 @@ Esta chamada "Doceria Fly" que tem o propósito de oferecer produtos acessíveis
 ## Imagens do projeto
 
 ![Home Page](home.png)
+##
+![Home Page](home2.png)
+##
+![SignUp Page](Cadastro.png)
 
