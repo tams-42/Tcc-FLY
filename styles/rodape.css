@@ -9,8 +9,8 @@ body, html {
 /* Configuração do rodapé principal */
 .rodape {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    width: 80vw;
+    margin-left: 150px;
 }
 
 /* Ajustes na estrutura dos elementos internos */
@@ -107,4 +107,80 @@ body, html {
 
 .direitos {
     margin-right: 50px;
+}
+
+@media (min-width: 1633px) {
+    .rodape {
+        display: flex;
+        width: 80vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .rodape-final {
+        padding-left: 50px;
+    }
+
+    .termos {
+        position: relative;
+        left:450px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .rodape {
+        display: flex;
+        width: 80vw;
+        margin-left: 370px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .rodape-final {
+        padding-left: 150px;
+    }
+
+    .termos {
+        position: relative;
+        left: 500px;
+    }
+
+}
+
+@media (max-width: 1028px){
+
+    .rodape-final {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Distribui o conteúdo */
+        color: var(--rosa-claro);
+        background-color: var(--cor-escura);
+        font-weight: 300;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        padding: 0 60px;
+    }
+
+    .termos {
+        position: relative;
+        left: 200px;
+    }
+
+    .rodape {
+        width: 90vw;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .texto-rodape {
+        display: none;
+    }
+
+    .conheca {
+        display: grid;
+        margin: 40px 20px 30px 20px;
+    }
 }
