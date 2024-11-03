@@ -26,12 +26,12 @@ Esta chamada "Doceria Fly" que tem o propósito de oferecer produtos acessíveis
 * Tâmara Falcão.
   
 ## Imagens do projeto
-
+## Home Page: 
 ![Home Page](home.png)
-##
+## Continuação do Home Page 
 ![Home Page](home2.png)
-##
+## Página de Cadastro
 ![SignUp Page](Cadastro.png)
-##
+## Página sobre as Desenvolvedoras 
 ![SignUp Page](sobrenos.png)
 
