@@ -1,7 +1,19 @@
-.rodape {
+/* Ajuste para garantir que o conteúdo ocupe a tela toda */
+body, html {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
+/* Configuração do rodapé principal */
+.rodape {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Ajustes na estrutura dos elementos internos */
 .texto-rodape {
     display: grid;
     width: 400px;
@@ -42,6 +54,7 @@
     display: flex;
     text-align: center;
 }
+
 .conheca-links {
     border: 1px solid var(--cor-escura);
     border-radius: 15px;
@@ -69,24 +82,29 @@
     margin-top: 30px;
 }
 
+/* Rodapé final */
 .rodape-final {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between; /* Distribui o conteúdo */
     color: var(--rosa-claro);
     background-color: var(--cor-escura);
     font-weight: 300;
-    font-size: 25px;
-    height: 70px;
+    font-size: 20px;
+    height: 3cm; /* Define altura fixa de 3 centímetros */
+    width: 100%;
+    position: relative; /* Fica no final do conteúdo */
+    bottom: 0;
+    padding: 0 20px; /* Opcional: adiciona um pouco de espaço nas laterais */
 }
 
 .termos {
     display: flex;
     justify-content: space-between;
     width: 350px;
-    margin-left: 350px;
+    margin: 0 auto; /* Centralizado na tela */
 }
 
 .direitos {
-    margin-right: 100px;
+    margin-right: 50px;
 }
