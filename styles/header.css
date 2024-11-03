@@ -1,55 +1,111 @@
 .cabecalho {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Layout em coluna para dispositivos menores */
     align-items: center;
-    position: relative;
+    justify-content: center;
     padding: 10px 0;
 }
 
 .cabecalho__imagem {
-    width: 250px;
+    width: 60vw; /* Largura proporcional para dispositivos menores */
+    max-width: 250px; /* Limite máximo para telas grandes */
     padding: 1.5em 0 1em 2em;
     display: flex;
 }
 
 .cabecalho__titulo {
-    padding-top: 0.2em;
-    padding-left: 0.5em;
+    font-size: 6vw; /* Tamanho relativo para responsividade */
     font-weight: 500;
-    font-size: 32px;
     color: var(--cor-escura);
     text-transform: uppercase;
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+    text-align: center; /* Centraliza o texto em telas menores */
 }
 
 .cabecalho__inicio {
     display: flex;
+    flex-direction: column; /* Alinha em coluna em dispositivos menores */
     align-items: center;
-    padding-left: 48px;
+    padding: 0; /* Remove padding em dispositivos menores */
 }
 
 .lista__menu {
     display: flex;
-    border-left: 1px solid var(--cor-escura);
-    padding-right: 96px;
-    height: 36px;
+    flex-direction: column; /* Coluna para dispositivos menores */
+    align-items: center;
+    border-left: none; /* Remove a borda para dispositivos menores */
+    padding-right: 0; /* Remove padding em dispositivos menores */
+    margin-top: 1em;
+    height: auto; /* Ajusta automaticamente em dispositivos menores */
+    list-style: none;
 }
 
 .lista__menu-links {
-    padding-left: 42px;
+    font-size: 5vw; /* Tamanho relativo para telas menores */
+    font-weight: 300;
+    padding-left: 0;
+    padding-top: 1em; /* Espaço entre os links em telas menores */
     text-decoration: none;
     color: var(--cor-escura);
-    font-weight: 300;
-    font-size: 30px;
-} 
+    text-align: center;
+}
 
 .lista__menu-links:hover {
     color: var(--salmao-escuro);
 }
 
-
 .titulo {
-    font-size: 150px;
-    padding: 40px 0 40px 80px;
+    font-size: 12vw; /* Tamanho relativo para responsividade */
+    padding: 20px 0 20px 5vw; /* Espaço proporcional para telas menores */
     color: var(--cor-escura);
     font-weight: 400;
+    text-align: center;
+}
+
+/* Media Query para telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cabecalho__imagem {
+        width: 250px; /* Tamanho fixo para telas maiores */
+        padding: 1.5em 0 1em 2em;
+    }
+
+    .cabecalho__titulo {
+        font-size: 32px; /* Tamanho fixo para telas maiores */
+        padding-left: 0.5em;
+        text-align: left;
+    }
+
+    .cabecalho__inicio {
+        flex-direction: row;
+        align-items: center;
+        padding-left: 48px;
+    }
+
+    .lista__menu {
+        flex-direction: row;
+        border-left: 1px solid var(--cor-escura);
+        padding-right: 96px;
+        height: 36px;
+        margin-top: 0;
+    }
+
+    .lista__menu-links {
+        font-size: 30px; /* Tamanho fixo para telas maiores */
+        padding-left: 42px;
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .titulo {
+        font-size: 150px; /* Tamanho fixo para telas maiores */
+        padding: 40px 0 40px 80px;
+        text-align: left;
+    }
 }
