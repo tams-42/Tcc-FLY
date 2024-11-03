@@ -7,10 +7,27 @@
     border-radius: 50px;
 }
 
+.pagamento:focus, select:focus {
+    background-color: var(--salmao);
+}
+
+.pagamento:hover {
+    background-color: var(--salmao);
+}
+
+.fechar:focus, select:focus {
+    background-color: var(--salmao);
+}
+
+.fechar:hover {
+    background-color: var(--salmao);
+}
+
 .nome {
     font-size: 5vw; /* Ajusta a fonte para responsividade */
     font-weight: 400;
     color: var(--cor-escura);
+    margin-bottom: 10px;
 }
 
 .nome-form {
@@ -29,6 +46,7 @@
     font-size: 4vw; /* Ajusta a fonte para responsividade */
     font-weight: 300;
     color: var(--cor-escura);
+    margin-bottom: 10px;
 }
 
 input[type="name"] {
@@ -95,19 +113,22 @@ input[type="name"] {
     color: var(--cor-escura);
     background-color: transparent;
     border-radius: 25px;
+    text-decoration: none;
 }
 
 .inferno {
     display: flex;
     justify-content: center;
     margin: 50px 0 30px 0;
+    text-decoration: none;
 }
 
 /* Media Queries para telas maiores */
 @media (min-width: 768px) {
     .pagamento-form {
-        margin: 30px 70px;
+        margin: 30px 0px;
         width: 80vw;
+        padding-bottom: 10px;
     }
 
     .nome {
@@ -129,6 +150,7 @@ input[type="name"] {
     .forma-pagamento {
         flex-direction: row;
         font-size: 25px;
+        justify-content: space-around;
     }
 
     .pagamento {
@@ -143,5 +165,12 @@ input[type="name"] {
     .fechar {
         width: 450px;
         font-size: 40px;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1028px) {
+    .nome-pagamento, .endereco-pagamento{
+        width: 70%;
     }
 }
