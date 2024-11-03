@@ -18,5 +18,60 @@ body {
     background-color: var(--rosa-claro);
     font-weight: 600;
     font-family: var(--fonte-titulo);
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px; /* Limit the width of the main content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+/* Responsive Typography */
+h1, h2, h3 {
+    font-size: 2rem; /* Default font size */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Responsive Layouts */
+header, footer, .main-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    header, footer, .main-content {
+        flex-direction: row; /* Stack elements horizontally on larger screens */
+        justify-content: space-between; /* Space out items */
+    }
+}
+
+/* Example for making images responsive */
+img {
+    max-width: 100%; /* Ensure images scale down */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional media queries for smaller screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px; /* Less padding on small screens */
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
 }
