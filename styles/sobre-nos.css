@@ -1,52 +1,121 @@
+/* Estilo base para a seção "sobre" */
 .sobre {
     display: flex;
+    flex-direction: column; /* Coluna por padrão para dispositivos menores */
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 5% 0;    
 }
 
+/* Estilo do título da seção "sobre" */
 .sobre-titulo {
-    font-size: 100px;
+    font-size: 10vw; /* Unidade relativa para se adaptar ao tamanho da tela */
     color: var(--cor-escura);
-    padding-left: 7%;
+    padding-left: 5%;
     font-weight: 400;
-    width: 50vw;
+    width: 90%; /* Largura ajustável para telas menores */
+    text-align: center; /* Centraliza o texto em dispositivos menores */
+    margin-bottom: 2%; /* Adiciona margem inferior */
 }
 
+/* Estilo do texto da seção "sobre" */
 .sobre-texto {
-    width: 50vw;
-    margin: 0 10% 0 0;
-    font-size: 25px;
+    width: 90%;
+    margin: 0 5%;
+    font-size: 5vw; /* Unidade relativa para adaptar o tamanho do texto */
     font-weight: 300;
     color: var(--cor-escura);
+    text-align: center; /* Centraliza o texto em dispositivos menores */
 }
 
+/* Estilo para a seção "maria" */
 .maria {
     display: flex;
+    flex-direction: column; /* Coluna por padrão para dispositivos menores */
     align-items: center;
-    justify-content: space-between;
-    padding: 7% 7% 4% 7%;
+    justify-content: center;
+    padding: 5%;
 }
 
+/* Estilo para a imagem dentro da seção "maria" */
 .maria__imagem {
-    width: 40%;
+    width: 80%; /* Ocupa 80% da largura da tela em dispositivos menores */
+    max-width: 400px; /* Limita a largura máxima */
+    margin-bottom: 20px; /* Adiciona um espaço abaixo da imagem */
 }
 
+/* Estilo para a descrição dentro da seção "maria" */
 .maria__descricao {
     display: grid;
-    width: 50%;
-    font-size: 30px;
+    width: 90%;
+    font-size: 5vw; /* Unidade relativa para adaptar o tamanho do texto */
     font-weight: 300;
     color: var(--cor-escura);
+    text-align: center; /* Centraliza o texto em dispositivos menores */
 }
 
+/* Estilo para o nome dentro da seção "maria" */
 .maria__nome {
     padding-bottom: 3%;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 6vw; /* Unidade relativa para adaptar o tamanho do texto */
+    text-align: center;
 }
 
+/* Estilo para o parágrafo dentro da seção "maria" */
 .maria__paragrafo {
     text-align: justify;
+    font-size: 5vw; /* Unidade relativa para adaptar o tamanho do texto */
 }
 
+/* Media Query para telas maiores (desktop) */
+@media (min-width: 768px) {
+    /* Layout horizontal para seções maiores */
+    .sobre {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5% 0;
+    }
+
+    .sobre-titulo {
+        font-size: 100px; /* Tamanho fixo para telas maiores */
+        padding-left: 7%;
+        width: 50vw;
+        text-align: left; /* Alinha à esquerda */
+    }
+
+    .sobre-texto {
+        width: 50vw;
+        margin: 0 10% 0 0;
+        font-size: 25px; /* Tamanho fixo para telas maiores */
+        text-align: left; /* Alinha à esquerda */
+    }
+
+    .maria {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7% 7% 4% 7%;
+    }
+
+    .maria__imagem {
+        width: 40%;
+        margin-bottom: 0; /* Remove margem para alinhamento horizontal */
+    }
+
+    .maria__descricao {
+        width: 50%;
+        font-size: 30px; /* Tamanho fixo para telas maiores */
+        text-align: left; /* Alinha à esquerda */
+    }
+
+    .maria__nome {
+        font-size: 35px; /* Tamanho fixo para telas maiores */
+        text-align: left;
+    }
+
+    .maria__paragrafo {
+        font-size: 30px; /* Tamanho fixo para telas maiores */
+    }
+}
