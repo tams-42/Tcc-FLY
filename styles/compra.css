@@ -1,0 +1,47 @@
+.titulo-compra {
+    font-size: 6vw; /* Usa unidades relativas para responsividade */
+    text-align: center;
+    padding: 0.2em 0;
+    margin: 50px 5vw 10px 5vw; /* Ajusta margens para telas menores */
+    background-color: var(--salmao);
+    color: var(--cor-escura);
+    border-radius: 30px;
+}
+
+.botao-compra {
+    width: 40vw; /* Ajusta a largura para telas menores */
+    border: 1px solid var(--cor-escura);
+    font-family: var(--fonte-principal);
+    font-size: 5vw; /* Ajusta a fonte para responsividade */
+    font-weight: 300;
+    padding: 5px 5px;
+    color: var(--cor-escura);
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 35%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botao-compra:hover {
+    background-color: var(--salmao);
+}
+
+@media (min-width: 768px) {
+    .titulo-compra {
+        font-size: 55px;
+        margin: 80px 24vw 70px 24vw;
+    }
+
+    .botao-compra {
+        width: 30vw;
+        font-size: 40px;
+        text-decoration: none;
+        margin-bottom: 100px;
+    }
+}
