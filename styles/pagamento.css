@@ -1,3 +1,26 @@
+.quantidade-produto{
+    background-color: var(--rosa-claro);
+	color: var(--cor-escura);
+	margin: 10px 5px 5px 22px;
+	padding: 7px 22px;
+	height: 22px;
+	width: 28px;
+	font: 25px var(--fonte-titulo);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+button {
+	background-color: var(--rosa-claro);
+	color: var(--cor-escura);
+	font:  var(--fonte-titulo);
+}
+
+button:hover {
+    background-color: var(--salmao);
+}
+
 .pagamento-form {
     display: grid;
     margin: 20px 5vw;
