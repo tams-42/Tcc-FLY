@@ -4,6 +4,7 @@
 @import url(styles/rodape.css);
 @import url(styles/banner.css);
 @import url(styles/sobre-nos.css);
+@import url(styles/compra.css);
 
 :root {
     --branca: #ffffff;
