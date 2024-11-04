@@ -6,19 +6,19 @@
 }
 
 .titulo-banner {
-    font-size: 10vw; /* Usa unidades relativas para responsividade */
+    font-size: 8vw; /* Usa unidades relativas para responsividade */
     color: var(--cor-escura);
     width: 80vw; /* Ajusta a largura em telas menores */
     margin: 30px 0; /* Reduz a margem para telas menores */
-    text-align: center; /* Centraliza o texto em dispositivos menores */
-    padding-left: 20px;
+    text-align: start; /* Centraliza o texto em dispositivos menores */
+    padding-left: 80px;
 }
 
 .imagem-banner {
     width: 50vw; /* Largura proporcional para dispositivos menores */
     height: auto; /* Ajusta a altura automaticamente */
     margin: 20px 0; /* Margem reduzida para dispositivos menores */
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .banner-conheca {
