@@ -99,7 +99,7 @@ body, html {
     width: 100%;
     position: relative; /* Fica no final do conteúdo */
     bottom: 0;
-    padding: 0 10px 0 10px; /* Opcional: adiciona um pouco de espaço nas laterais */
+    padding: 0 20px 0 20px; /* Opcional: adiciona um pouco de espaço nas laterais */
 }
 
 .termos {
@@ -107,6 +107,7 @@ body, html {
     justify-content: space-between;
     width: 350px;
     margin: 0; /* Centralizado na tela */
+    padding-right: 40px;
 }
 
 .direitos {
