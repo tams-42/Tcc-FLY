@@ -33,105 +33,116 @@
     <section class="main">
 
         <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <img src="img/Produtos_1.png" class="imagin">
-            <h2 class="doce">Pudim</h2>
-            <div class="texto">
-                <h2 class="texto-produto">Quantidade: </h2>
-                <h3 class="quantidade-produto">0</h3>
-            </div>
-            <div class="valor">
-                <h2 class="texto-valor">Total: </h2>
-                <h2 class="preco-valor">R$ 6,00</h2>
-            </div>
-            <h2 class="excluir">Excluir</h2>
-        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <!-- Pudim -->
+                    <img src="img/Produtos_1.png" class="imagin">
+                    <h2 class="doce">Pudim R$6,00</h2>
+                    <div class="texto">
+                        <span class="texto-produto">Quantidade:</span>
+                        <input class="quantidade-produto" id="quantidade-pudim" type="number" placeholder="0">
+                    </div>
+                    <div class="valor">
+                        <h2 class="texto-valor">Total: </h2>
+                        <span class="preco-valor" id="preco-total">R$ 0,00</span>
+                    </div>
+                    <button class="excluir" id="excluir-1">Excluir</button>
+                </div>
 
-        <div class="swiper-slide">
-            <img src="img/Produtos_2.png" class="imagin">
-            <h2 class="doce">Brigadeiro</h2>
-            <div class="texto">
-                <h2 class="texto-produto">Quantidade: </h2>
-                <h3 class="quantidade-produto">0</h3>
-            </div>
-            <div class="valor">
-                <h2 class="texto-valor">Total: </h2>
-                <h2 class="preco-valor">R$ 6,00</h2>
-            </div>
-            <h2 class="excluir">Excluir</h2>
-        </div>
 
-        <div class="swiper-slide">
-            <img src="img/Produtos_3.png" class="imagin">
-            <h2 class="doce">Beijinho</h2>
-            <div class="texto">
-                <h2 class="texto-produto">Quantidade: </h2>
-                <h3 class="quantidade-produto">0</h3>
-            </div>
-            <div class="valor">
-                <h2 class="texto-valor">Total: </h2>
-                <h2 class="preco-valor">R$ 6,00</h2>
-            </div>
-            <h2 class="excluir">Excluir</h2>
-        </div>
+                <!-- Brigadeiro -->
+                <div class="swiper-slide">
+                    <img src="img/Produtos_2.png" class="imagin">
+                    <h2 class="doce">Brigadeiro R$6,00</h2>
+                    <div class="texto">
+                        <span class="texto-produto">Quantidade:</span>
+                        <input class="quantidade-produto" id="quantidade-brigadeiro" data-preco="6.00" type="number"
+                            placeholder="0" min="0">
+                    </div>
+                    <div class="valor">
+                        <h2 class="texto-valor">Total: </h2>
+                        <span class="preco-valor" id="preco-total">R$ 0,00</span>
+                    </div>
+                    <button class="excluir" id="excluir-2">Excluir</button>
+                </div>
 
-        <div class="swiper-slide">
-            <img src="img/Produtos_4.png" class="imagin">
-            <h2 class="doce">Brownie</h2>
-            <div class="texto">
-                <h2 class="texto-produto">Quantidade: </h2>
-                <h3 class="quantidade-produto">0</h3>
-            </div>
-            <div class="valor">
-                <h2 class="texto-valor">Total: </h2>
-                <h2 class="preco-valor">R$ 6,00</h2>
-            </div>
-            <h2 class="excluir">Excluir</h2>
-        </div>
+                <!-- Beijinho -->
+                <div class="swiper-slide">
+                    <img src="img/Produtos_3.png" class="imagin">
+                    <h2 class="doce">Beijinho R$6,00</h2>
+                    <div class="texto">
+                        <span class="texto-produto">Quantidade:</span>
+                        <input class="quantidade-produto" id="quantidade-beijinho" data-preco="6.00" type="number"
+                            placeholder="0" min="0">
+                    </div>
+                    <div class="valor">
+                        <h2 class="texto-valor">Total: </h2>
+                        <span class="preco-valor" id="preco-total">R$ 0,00</span>
+                    </div>
+                    <button class="excluir" id="excluir-3">Excluir</button>
+                </div>
 
-        <div class="swiper-slide">
-            <img src="img/Produtos_5.png" class="imagin">
-            <h2 class="doce">Torta de Limão</h2>
-            <div class="texto">
-                <h2 class="texto-produto">Quantidade: </h2>
-                <h3 class="quantidade-produto">0</h3>
-            </div>
-            <div class="valor">
-                <h2 class="texto-valor">Total: </h2>
-                <h2 class="preco-valor">R$ 6,00</h2>
-            </div>
-            <h2 class="excluir">Excluir</h2>
-        </div>
+                <!-- Brownie -->
+                <div class="swiper-slide">
+                    <img src="img/Produtos_4.png" class="imagin">
+                    <h2 class="doce">Brownie R$6,00</h2>
+                    <div class="texto">
+                        <span class="texto-produto">Quantidade:</span>
+                        <input class="quantidade-produto" id="quantidade-brownie" data-preco="6.00" type="number"
+                            placeholder="0" min="0">
+                    </div>
+                    <div class="valor">
+                        <h2 class="texto-valor">Total: </h2>
+                        <span class="preco-valor" id="preco-total">R$ 0,00</span>
+                    </div>
+                    <button class="excluir" id="excluir-4">Excluir</button>
+                </div>
 
-        <div class="swiper-slide">
-            <img src="img/Produtos_6.png" class="imagin">
-            <h2 class="doce">Cheesecake</h2>
-            <div class="texto">
-                <h2 class="texto-produto">Quantidade: </h2>
-                <h3 class="quantidade-produto">0</h3>
+                <!-- Torta de limão -->
+                <div class="swiper-slide">
+                    <img src="img/Produtos_5.png" class="imagin">
+                    <h2 class="doce">Torta de Limão R$6,00</h2>
+                    <div class="texto">
+                        <span class="texto-produto">Quantidade:</span>
+                        <input class="quantidade-produto" id="quantidade-limao" data-preco="6.00" type="number"
+                            placeholder="0" min="0">
+                    </div>
+                    <div class="valor">
+                        <h2 class="texto-valor">Total: </h2>
+                        <span class="preco-valor" id="preco-total">R$ 0,00</span>
+                    </div>
+                    <button class="excluir" id="excluir-5">Excluir</button>
+                </div>
+
+                <!-- Cheesecake -->
+                <div class="swiper-slide">
+                    <img src="img/Produtos_6.png" class="imagin">
+                    <h2 class="doce">Cheesecake R$6,00</h2>
+                    <div class="texto">
+                        <span class="texto-produto">Quantidade:</span>
+                        <input class="quantidade-produto" id="quantidade-cheesecake" data-preco="6.00" type="number"
+                            min="0" placeholder="0">
+                    </div>
+                    <div class="valor">
+                        <h2 class="texto-valor">Total: </h2>
+                        <span class="preco-valor" id="preco-total">R$ 0,00</span>
+                    </div>
+                    <button class="excluir" id="excluir-6">Excluir</button>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
-            <div class="valor">
-                <h2 class="texto-valor">Total: </h2>
-                <h2 class="preco-valor">R$ 6,00</h2>
-            </div>
-            <h2 class="excluir">Excluir</h2>
-        </div>
-        ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-  
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-  
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
 
     </section>
 
@@ -188,7 +199,25 @@
             <h2>Política de Privacidade</h2>
         </div>  
     </section>
+    
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 15,
+            slidesPerView: 3,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 
+
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
