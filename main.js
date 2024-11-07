@@ -54,7 +54,19 @@ inputsQuantidade.forEach(input => {
     input.addEventListener('change', () => {
         // Atualiza o preço total
         atualizarPrecoTotal(input);
-        // Chama a função para evitar números
-        evitarNumerosNegativos(event); negativos
+        // Chama a função para evitar números negativos
+        evitarNumerosNegativos(event);
     });
+});
+
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 15,
+    slidesPerView: 3,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    }
 });

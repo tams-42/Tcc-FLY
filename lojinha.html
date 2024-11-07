@@ -43,11 +43,11 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <!-- Pudim -->
-                    <img src="img/Produtos_1.png" class="imagin">
+                    <img src="img/Produtos_1.png" class="imagin" alt="Um pudim">
                     <h2 class="doce">Pudim R$6,00</h2>
                     <div class="texto">
                         <span class="texto-produto">Quantidade:</span>
-                        <input class="quantidade-produto" id="quantidade-pudim" type="number" placeholder="0">
+                        <input class="quantidade-produto" id="quantidade-pudim" type="number" data-preco="6.00" placeholder="0" min="0">
                     </div>
                     <div class="valor">
                         <h2 class="texto-valor">Total: </h2>
@@ -55,11 +55,9 @@
                     </div>
                     <button class="excluir" id="excluir-1">Excluir</button>
                 </div>
-
-
                 <!-- Brigadeiro -->
                 <div class="swiper-slide">
-                    <img src="img/Produtos_2.png" class="imagin">
+                    <img src="img/Produtos_2.png" class="imagin" alt="Um brigadeiro de chocolate">
                     <h2 class="doce">Brigadeiro R$6,00</h2>
                     <div class="texto">
                         <span class="texto-produto">Quantidade:</span>
@@ -72,10 +70,9 @@
                     </div>
                     <button class="excluir" id="excluir-2">Excluir</button>
                 </div>
-
                 <!-- Beijinho -->
                 <div class="swiper-slide">
-                    <img src="img/Produtos_3.png" class="imagin">
+                    <img src="img/Produtos_3.png" class="imagin" alt="Um beijinho">
                     <h2 class="doce">Beijinho R$6,00</h2>
                     <div class="texto">
                         <span class="texto-produto">Quantidade:</span>
@@ -88,10 +85,9 @@
                     </div>
                     <button class="excluir" id="excluir-3">Excluir</button>
                 </div>
-
                 <!-- Brownie -->
                 <div class="swiper-slide">
-                    <img src="img/Produtos_4.png" class="imagin">
+                    <img src="img/Produtos_4.png" class="imagin" alt="Um brownie">
                     <h2 class="doce">Brownie R$6,00</h2>
                     <div class="texto">
                         <span class="texto-produto">Quantidade:</span>
@@ -104,10 +100,9 @@
                     </div>
                     <button class="excluir" id="excluir-4">Excluir</button>
                 </div>
-
                 <!-- Torta de limão -->
                 <div class="swiper-slide">
-                    <img src="img/Produtos_5.png" class="imagin">
+                    <img src="img/Produtos_5.png" class="imagin" alt="Uma fatia de uma torta de limão">
                     <h2 class="doce">Torta de Limão R$6,00</h2>
                     <div class="texto">
                         <span class="texto-produto">Quantidade:</span>
@@ -120,10 +115,9 @@
                     </div>
                     <button class="excluir" id="excluir-5">Excluir</button>
                 </div>
-
                 <!-- Cheesecake -->
-                <div class="swiper-slide">
-                    <img src="img/Produtos_6.png" class="imagin">
+                <div class="swiper-slide"> 
+                    <img src="img/Produtos_6.png" class="imagin" alt="Uma fatia de cheesecake>
                     <h2 class="doce">Cheesecake R$6,00</h2>
                     <div class="texto">
                         <span class="texto-produto">Quantidade:</span>
@@ -136,18 +130,15 @@
                     </div>
                     <button class="excluir" id="excluir-6">Excluir</button>
                 </div>
-
+            </div>
+        </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-
+        </div> 
     </section>
 
     <h2 class="titulo__main">Pagamento</h2>
@@ -208,23 +199,11 @@
     </section>
 
 
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 15,
-            slidesPerView: 3,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-        });
-    </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
