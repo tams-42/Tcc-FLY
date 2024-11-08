@@ -47,3 +47,49 @@ table {
 	border-spacing: 0;
 }
 
+
+
+/* Contêiner principal alinhado lado a lado com a section de doces */
+.main {
+    display: flex;
+    gap: 20px; /* Espaço entre o Swiper e a section de doces */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+	position: relative;
+}
+
+.swiper {
+    max-width: 600px; 
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+	
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    z-index: 10; 
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: -40px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next {
+    position: absolute;
+    right: -40px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
