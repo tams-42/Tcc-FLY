@@ -40,14 +40,15 @@
     width: 18px; /* Ajusta o tamanho dos botões para telas menores */
     height: 18px;
     padding: 1em;
+    position: absolute;
 }
 
 .swiper-button-next {
-    right: -15px;
+    right: 20%;
 }
 
 .swiper-button-prev {
-    left: -15px;
+    left: 20%;
 }
 
 .swiper-slide {
