@@ -27,9 +27,9 @@ Esta chamada "Doceria Fly" que tem o propósito de oferecer produtos acessíveis
   
 ## Imagens do projeto
 ## Home Page: 
-![Home Page](home.png)
+![Home Page](imagens.png/todas-as-imagens-TCC-FLY/home.png)
 ## Continuação do Home Page:
-![Home Page](home2.png)
+![Home Page](imagens.png/todas-as-imagens-TCC-FLY/home2.png)
 ## Página sobre as Desenvolvedoras: 
-![SignUp Page](sobrenos.png)
+![SignUp Page](imagens.png/todas-as-imagens-TCC-FLY/sobrenos.png)
 
